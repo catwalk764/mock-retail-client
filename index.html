@@ -8,10 +8,32 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-	<iframe 
-  src="https://test.chatbotaq.com/chatbot.html?initialMessage=Hello%21+How+may+I+assist+you%3F&chatHeader=Chatbot&footerText=Powered+by+ChatbotAQ&showFooter=true&fontSize=14px&fontFamily=Arial&userMessageColor=%2396bce9&botMessageColor=%23eceff3&chatBubbleColor=linear-gradient%2890deg%2C+%239D4EDD+0%25%2C+%234A90E2+100%25%29&embedType=chatbubble&enableAuth=false"
-  style="width:100%;height:600px;border:none"
-></iframe>
+	
+<script>
+  window.chatbotAQConfig = {
+    user_id: 'default_user_id',
+    user_hash: '',
+    initialMessage: 'Hello! How may I assist you?',
+    chatHeader: 'Chatbot',
+    footerText: 'Powered by ChatbotAQ',
+    showFooter: true,
+    fontSize: '14px',
+    fontFamily: 'Arial',
+    userMessageColor: '#96bce9',
+    botMessageColor: '#eceff3',
+    chatBubbleColor: 'linear-gradient(90deg, #9D4EDD 0%, #4A90E2 100%)',
+    embedType: 'chatbubble'
+  };
+</script>
+
+  if (!clientId || !sourceId) {
+    console.error('Missing clientId or sourceId');
+    return '';
+  }
+<script src="https://test.chatbotaq.com/ChatWindow.umd.js"></script>
+<script>
+  window.chatbotAQ.init({"initialMessage":"Hello! How may I assist you?","chatHeader":"Chatbot","footerText":"Powered by ChatbotAQ","showFooter":true,"fontSize":"14px","fontFamily":"Arial","userMessageColor":"#96bce9","botMessageColor":"#eceff3","chatBubbleColor":"linear-gradient(90deg, #9D4EDD 0%, #4A90E2 100%)","embedType":"chatbubble","enableAuth":false});
+</script>
     <h1>Welcome to Mock Retail Client</h1>
      <p>Explore our products and services.</p>
       <a href="products.json">View Products (JSON)</a>
